@@ -1,0 +1,17 @@
+Sequentially store prefix => list of followers
+
+Random prefix......? how?
+Random follower.....? how?
+
+Followers are a set (can't have more than 1)
+
+LinkedSet for followers
+
+??? for the prefix - need to support indexing
+
+array of linkedSets? -> of what size since it can't suffer from collisions?
+
+solution:
+scan doc once first, count the number of words
+set hash array size to:    noOfWords - prefix - 1
+scan it again to add to the hash table?
